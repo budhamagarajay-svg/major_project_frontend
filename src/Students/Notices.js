@@ -43,6 +43,12 @@ const notices = [
     description:
       "Students are requested to renew their library membership to continue borrowing books and accessing digital resources.",
   },
+  {
+    tile:"College Sports week ",
+    date: "October 2026",
+    description:"The annual college sports week will be organized in October. Students interested in participating are requested to register with their respective departments"
+
+  },
 ];
 
 const Notices = () => {
