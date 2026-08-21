@@ -8,6 +8,12 @@ import {
   FaDna,
   FaGraduationCap,
   FaUsers,
+  FaArrowRight,
+  FaCheckCircle,
+  FaVial,
+  FaBookMedical,
+  FaShieldAlt,
+  FaAward,
 } from "react-icons/fa";
 
 const VeterinaryLab = () => {
@@ -76,19 +82,15 @@ const VeterinaryLab = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
-
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-green-950 via-emerald-900 to-green-600 text-white">
-
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-emerald-400/10 rounded-full"></div>
 
         <div className="absolute -bottom-32 -left-24 w-96 h-96 bg-yellow-300/10 rounded-full"></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-20 text-center">
-
           <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white/10 border border-white/20 shadow-2xl mb-7">
-
             <FaMicroscope className="text-5xl text-yellow-300" />
-
           </div>
 
           <p className="uppercase tracking-widest text-green-200 font-semibold mb-3">
@@ -110,7 +112,6 @@ const VeterinaryLab = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-
             <span className="px-5 py-2 rounded-full bg-white/10 border border-white/20">
               <FaMicroscope className="inline mr-2 text-yellow-300" />
               Laboratory Practice
@@ -125,95 +126,67 @@ const VeterinaryLab = () => {
               <FaDna className="inline mr-2 text-yellow-300" />
               Diagnostic Study
             </span>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Statistics Section */}
       <section className="relative -mt-10 max-w-6xl mx-auto px-6 z-10">
-
         <div className="bg-white rounded-2xl shadow-2xl p-7">
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
             <div className="text-center md:border-r border-gray-200">
-
               <FaMicroscope className="text-4xl text-green-600 mx-auto mb-3" />
 
               <h3 className="text-2xl font-extrabold text-green-950">
                 Practical
               </h3>
 
-              <p className="text-gray-500">
-                Laboratory Training
-              </p>
-
+              <p className="text-gray-500">Laboratory Training</p>
             </div>
 
             <div className="text-center md:border-r border-gray-200">
-
               <FaPaw className="text-4xl text-orange-500 mx-auto mb-3" />
 
               <h3 className="text-2xl font-extrabold text-green-950">
                 Animal
               </h3>
 
-              <p className="text-gray-500">
-                Health Practice
-              </p>
-
+              <p className="text-gray-500">Health Practice</p>
             </div>
 
             <div className="text-center md:border-r border-gray-200">
-
               <FaUsers className="text-4xl text-blue-600 mx-auto mb-3" />
 
               <h3 className="text-2xl font-extrabold text-green-950">
                 Students
               </h3>
 
-              <p className="text-gray-500">
-                Skill Development
-              </p>
-
+              <p className="text-gray-500">Skill Development</p>
             </div>
 
             <div className="text-center">
-
               <FaGraduationCap className="text-4xl text-purple-600 mx-auto mb-3" />
 
               <h3 className="text-2xl font-extrabold text-green-950">
                 CTEVT
               </h3>
 
-              <p className="text-gray-500">
-                Academic Program
-              </p>
-
+              <p className="text-gray-500">Academic Program</p>
             </div>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* About Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           <div>
-
             <div className="flex items-center gap-3 mb-4">
-
               <div className="w-12 h-1 bg-yellow-400"></div>
 
               <span className="text-green-700 font-bold uppercase tracking-wider">
                 About Our Laboratory
               </span>
-
             </div>
 
             <h2 className="text-4xl font-extrabold text-green-950 mb-6">
@@ -223,7 +196,9 @@ const VeterinaryLab = () => {
 
             <p className="text-gray-600 leading-8 mb-5">
               The{" "}
-              <strong>Veterinary Laboratory of Rolpa Polytechnic Institute</strong>{" "}
+              <strong>
+                Veterinary Laboratory of Rolpa Polytechnic Institute
+              </strong>{" "}
               is an important academic facility supporting practical education
               for students studying Veterinary and Animal Science programs.
             </p>
@@ -241,23 +216,17 @@ const VeterinaryLab = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
-
               <div className="bg-green-50 rounded-xl p-5 text-center">
-
                 <FaMicroscope className="text-3xl text-green-600 mx-auto mb-2" />
 
-                <h3 className="font-bold text-green-900">
-                  Laboratory
-                </h3>
+                <h3 className="font-bold text-green-900">Laboratory</h3>
 
                 <p className="text-sm text-gray-500">
                   Practical Learning
                 </p>
-
               </div>
 
               <div className="bg-orange-50 rounded-xl p-5 text-center">
-
                 <FaPaw className="text-3xl text-orange-500 mx-auto mb-2" />
 
                 <h3 className="font-bold text-green-900">
@@ -267,37 +236,26 @@ const VeterinaryLab = () => {
                 <p className="text-sm text-gray-500">
                   Practical Training
                 </p>
-
               </div>
-
             </div>
-
           </div>
 
           <div className="relative">
-
             <div className="overflow-hidden rounded-3xl shadow-2xl">
-
               <img
                 src="/images/veterinary-lab.jpg"
                 alt="Rolpa Polytechnic Institute Veterinary Laboratory"
                 className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
               />
-
             </div>
 
             <div className="absolute bottom-6 left-6 right-6 bg-black/65 backdrop-blur-sm text-white rounded-2xl p-5">
-
               <div className="flex items-center gap-4">
-
                 <div className="w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center">
-
                   <FaMicroscope className="text-3xl text-yellow-300" />
-
                 </div>
 
                 <div>
-
                   <h3 className="text-xl font-bold">
                     Modern Veterinary Learning
                   </h3>
@@ -306,25 +264,17 @@ const VeterinaryLab = () => {
                     Developing practical knowledge through laboratory
                     education and scientific learning.
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Facilities Section */}
       <section className="bg-gray-100 py-20">
-
         <div className="max-w-7xl mx-auto px-6">
-
           <div className="text-center mb-12">
-
             <span className="text-green-700 font-bold uppercase tracking-wider">
               What We Provide
             </span>
@@ -337,18 +287,14 @@ const VeterinaryLab = () => {
               Practical facilities designed to help students develop
               laboratory and animal health skills.
             </p>
-
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
-
             {facilities.map((item, index) => (
-
               <div
                 key={index}
                 className="group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
               >
-
                 <div className="w-16 h-16 rounded-2xl bg-green-50 flex items-center justify-center text-3xl text-green-700 group-hover:bg-green-700 group-hover:text-white transition-all duration-300 mb-6">
                   {item.icon}
                 </div>
@@ -362,53 +308,37 @@ const VeterinaryLab = () => {
                 </p>
 
                 <div className="mt-5 flex items-center text-green-700 font-semibold text-sm">
-
                   <FaArrowRight className="mr-2" />
-
                   Practical Training
-
                 </div>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Equipment Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           <div className="relative">
-
             <div className="overflow-hidden rounded-3xl shadow-2xl">
-
               <img
                 src="/images/veterinary-microscope.jpg"
                 alt="Veterinary laboratory microscope"
                 className="w-full h-[520px] object-cover hover:scale-105 transition duration-700"
               />
-
             </div>
 
             <div className="absolute top-6 right-6 bg-white rounded-2xl shadow-xl p-5">
-
               <FaMicroscope className="text-4xl text-green-600 mx-auto mb-2" />
 
               <p className="font-bold text-green-900">
                 Laboratory Study
               </p>
-
             </div>
-
           </div>
 
           <div>
-
             <span className="text-green-700 font-bold uppercase tracking-wider">
               Laboratory Resources
             </span>
@@ -424,42 +354,29 @@ const VeterinaryLab = () => {
             </p>
 
             <div className="space-y-4">
-
               {equipment.map((item, index) => (
-
                 <div
                   key={index}
                   className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-green-200 transition"
                 >
-
                   <div className="w-10 h-10 flex-shrink-0 rounded-full bg-green-50 flex items-center justify-center">
-
                     <FaCheckCircle className="text-green-600" />
-
                   </div>
 
                   <span className="font-medium text-gray-700">
                     {item}
                   </span>
-
                 </div>
-
               ))}
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Activities Section */}
       <section className="bg-green-950 py-20">
-
         <div className="max-w-7xl mx-auto px-6">
-
           <div className="text-center text-white mb-12">
-
             <span className="text-green-300 font-bold uppercase tracking-wider">
               Hands-on Education
             </span>
@@ -472,44 +389,32 @@ const VeterinaryLab = () => {
               Students participate in laboratory activities that strengthen
               their practical knowledge and technical skills.
             </p>
-
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
             {activities.map((item, index) => (
-
               <div
                 key={index}
                 className="bg-white/10 border border-white/10 rounded-2xl p-6 text-white hover:bg-white/20 hover:-translate-y-2 transition-all duration-300"
               >
-
                 <div className="w-14 h-14 rounded-xl bg-green-700 flex items-center justify-center mb-5">
-
                   <FaVial className="text-2xl text-yellow-300" />
-
                 </div>
 
                 <h3 className="font-bold text-lg leading-7">
                   {item}
                 </h3>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Practical Education CTA */}
       <section className="relative overflow-hidden bg-gradient-to-r from-green-800 to-emerald-600 py-20">
-
         <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-white/5"></div>
 
         <div className="max-w-6xl mx-auto px-6 text-center text-white">
-
           <FaBookMedical className="text-6xl text-yellow-300 mx-auto mb-5" />
 
           <h2 className="text-4xl font-extrabold">
@@ -523,41 +428,27 @@ const VeterinaryLab = () => {
           </p>
 
           <div className="flex justify-center flex-wrap gap-8 mt-8">
-
             <div className="flex items-center gap-2">
-
               <FaShieldAlt className="text-yellow-300" />
-
               <span>Animal Health</span>
-
             </div>
 
             <div className="flex items-center gap-2">
-
               <FaMicroscope className="text-yellow-300" />
-
               <span>Laboratory Skills</span>
-
             </div>
 
             <div className="flex items-center gap-2">
-
               <FaGraduationCap className="text-yellow-300" />
-
               <span>Practical Education</span>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Benefits Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-
         <div className="text-center mb-12">
-
           <span className="text-green-700 font-bold uppercase tracking-wider">
             Student Development
           </span>
@@ -570,20 +461,15 @@ const VeterinaryLab = () => {
             Practical veterinary laboratory education helps students
             develop technical knowledge and professional confidence.
           </p>
-
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
           {benefits.map((item, index) => (
-
             <div
               key={index}
               className="bg-white rounded-2xl shadow-lg p-7 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
             >
-
               <div className="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-5">
-
                 {index === 0 && (
                   <FaMicroscope className="text-3xl text-green-600" />
                 )}
@@ -607,7 +493,6 @@ const VeterinaryLab = () => {
                 {index === 5 && (
                   <FaAward className="text-3xl text-green-600" />
                 )}
-
               </div>
 
               <h3 className="text-lg font-bold text-green-950">
@@ -618,21 +503,15 @@ const VeterinaryLab = () => {
                 Practical knowledge and experience for future veterinary
                 professionals.
               </p>
-
             </div>
-
           ))}
-
         </div>
-
       </section>
 
+      {/* Rules Section */}
       <section className="bg-blue-950 py-20">
-
         <div className="max-w-6xl mx-auto px-6">
-
           <div className="text-center text-white mb-10">
-
             <FaShieldAlt className="text-5xl text-yellow-300 mx-auto mb-5" />
 
             <h2 className="text-4xl font-extrabold">
@@ -643,28 +522,20 @@ const VeterinaryLab = () => {
               Safety, cleanliness and discipline are essential inside
               the laboratory.
             </p>
-
           </div>
 
           <div className="bg-white rounded-2xl shadow-2xl p-8">
-
             <div className="grid md:grid-cols-2 gap-5">
-
               {rules.map((rule, index) => (
-
                 <div
                   key={index}
                   className="flex items-start gap-4 bg-gray-50 rounded-xl p-5"
                 >
-
                   <div className="w-9 h-9 flex-shrink-0 rounded-full bg-green-100 flex items-center justify-center">
-
                     <FaCheckCircle className="text-green-600" />
-
                   </div>
 
                   <div>
-
                     <span className="text-green-700 font-bold mr-2">
                       {index + 1}.
                     </span>
@@ -672,25 +543,17 @@ const VeterinaryLab = () => {
                     <span className="text-gray-700">
                       {rule}
                     </span>
-
                   </div>
-
                 </div>
-
               ))}
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* Final Section */}
       <section className="bg-green-50 border-t border-green-100 py-16">
-
         <div className="max-w-5xl mx-auto px-6 text-center">
-
           <FaGraduationCap className="text-5xl text-green-700 mx-auto mb-5" />
 
           <h2 className="text-3xl md:text-4xl font-extrabold text-green-950">
@@ -703,11 +566,8 @@ const VeterinaryLab = () => {
             understand animal health and prepare themselves for professional
             careers in veterinary services.
           </p>
-
         </div>
-
       </section>
-
     </div>
   );
 };
