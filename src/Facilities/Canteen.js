@@ -11,551 +11,714 @@ import {
   FaCheckCircle,
   FaGraduationCap,
   FaStore,
+  FaLeaf,
+  FaHeart,
+  FaSmile,
 } from "react-icons/fa";
- 
-
 
 const Canteen = () => {
+  const facilities = [
+    {
+      icon: <FaUtensils />,
+      title: "Quality Food Service",
+      desc: "Fresh and quality food items are available for students, teachers and staff members.",
+    },
+    {
+      icon: <FaAppleAlt />,
+      title: "Healthy Meals",
+      desc: "Nutritious meals and snacks support students' health and daily learning activities.",
+    },
+    {
+      icon: <FaWater />,
+      title: "Clean Drinking Water",
+      desc: "Clean and safe drinking water facility is available for campus members.",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Student Friendly",
+      desc: "A comfortable environment where students can relax and interact during break time.",
+    },
+  ];
+
+  const foodItems = [
+    "Daily lunch and meal service",
+    "Tea, coffee and light snacks",
+    "Healthy food options",
+    "Affordable prices for students",
+    "Seasonal food items",
+    "Clean and hygienic preparation",
+  ];
+
+  const benefits = [
+    {
+      icon: <FaClock />,
+      title: "Saves Time",
+      desc: "Students can enjoy food without leaving the college campus.",
+    },
+    {
+      icon: <FaHeart />,
+      title: "Healthy Eating",
+      desc: "The canteen encourages healthy and balanced eating habits.",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Social Space",
+      desc: "A friendly place for students to meet, relax and interact.",
+    },
+    {
+      icon: <FaGraduationCap />,
+      title: "Student Support",
+      desc: "Convenient food services support students throughout college hours.",
+    },
+    {
+      icon: <FaSmile />,
+      title: "Comfortable Environment",
+      desc: "Students can take a refreshing break in a welcoming environment.",
+    },
+    {
+      icon: <FaStore />,
+      title: "Campus Facility",
+      desc: "Food and refreshment services are conveniently available inside campus.",
+    },
+  ];
+
+  const rules = [
+    "Maintain cleanliness in the canteen area.",
+    "Dispose of waste in designated places.",
+    "Food should be prepared and served hygienically.",
+    "Maintain discipline while using canteen facilities.",
+    "Respect canteen staff and other users.",
+    "Avoid unnecessary wastage of food and water.",
+  ];
+
+  return (
+    <div className="bg-gray-50 text-gray-800">
+
+      <section className="relative min-h-[560px] flex items-center overflow-hidden">
+
+        <img
+          src="/images/canteen.jpg"
+          alt="Rolpa Polytechnic Institute Canteen"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-950/95 via-orange-900/80 to-black/50"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 py-24 w-full">
+
+          <div className="max-w-3xl">
+
+            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-3 rounded-full text-orange-100 mb-7">
+
+              <FaUtensils className="text-yellow-300" />
+
+              <span className="font-semibold tracking-wide">
+                CAMPUS FOOD & REFRESHMENT FACILITY
+              </span>
+
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight">
 
+              Rolpa Polytechnic
 
-const facilities = [
+              <span className="block text-yellow-300">
+                Institute Canteen
+              </span>
 
-{
-icon:<FaUtensils/>,
-title:"Quality Food Service",
-desc:"Rolpa Polytechnic Institute Canteen provides fresh and quality food items for students, teachers and staff members."
-},
+            </h1>
 
-{
-icon:<FaAppleAlt/>,
-title:"Healthy Meals",
-desc:"The canteen focuses on providing nutritious meals and snacks to support students' health and daily learning activities."
-},
+            <p className="text-lg sm:text-xl text-gray-200 mt-7 leading-relaxed max-w-2xl">
 
-{
-icon:<FaWater/>,
-title:"Clean Drinking Water",
-desc:"Safe and clean drinking water facility is available for students and campus members."
-},
+              A welcoming campus food facility providing quality,
+              hygienic and affordable food services for students,
+              teachers and staff of Rolpa Polytechnic Institute.
 
-{
-icon:<FaUsers/>,
-title:"Student Friendly Environment",
-desc:"The canteen provides a comfortable place where students can relax and interact during break time."
-}
+            </p>
 
-];
+            <div className="flex flex-wrap gap-4 mt-9">
 
+              <a
+                href="#facilities"
+                className="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-300 text-orange-950 font-bold px-7 py-4 rounded-full transition duration-300 shadow-xl"
+              >
+                <FaUtensils />
+                Explore Facilities
+              </a>
 
+              <a
+                href="#food"
+                className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold px-7 py-4 rounded-full transition duration-300"
+              >
+                <FaCoffee />
+                Food Services
+              </a>
 
-const foodItems=[
+            </div>
 
-"Daily lunch and meal service",
+          </div>
 
-"Tea, coffee and light snacks",
+        </div>
 
-"Healthy food options",
+      </section>
 
-"Affordable price for students",
+      <section className="relative -mt-16 z-10 max-w-6xl mx-auto px-6">
 
-"Seasonal food items",
+        <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8">
 
-"Clean and hygienic preparation"
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-];
+            <div className="text-center md:border-r border-gray-200">
 
+              <FaUtensils className="text-4xl text-orange-600 mx-auto mb-3" />
 
+              <h3 className="text-2xl font-extrabold text-gray-900">
+                Quality
+              </h3>
 
-const benefits=[
+              <p className="text-gray-500 mt-1">
+                Food Service
+              </p>
 
-"Provides convenient food facility inside campus",
+            </div>
 
-"Saves students' time during college hours",
+            <div className="text-center md:border-r border-gray-200">
 
-"Supports healthy eating habits",
+              <FaAppleAlt className="text-4xl text-green-600 mx-auto mb-3" />
 
-"Creates a social interaction place for students",
+              <h3 className="text-2xl font-extrabold text-gray-900">
+                Healthy
+              </h3>
 
-"Provides affordable food services"
+              <p className="text-gray-500 mt-1">
+                Food Options
+              </p>
 
-];
+            </div>
 
+            <div className="text-center md:border-r border-gray-200">
 
+              <FaShieldAlt className="text-4xl text-blue-600 mx-auto mb-3" />
 
-const rules=[
+              <h3 className="text-2xl font-extrabold text-gray-900">
+                Hygienic
+              </h3>
 
-"Maintain cleanliness in the canteen area.",
+              <p className="text-gray-500 mt-1">
+                Environment
+              </p>
 
-"Dispose waste in proper places.",
+            </div>
 
-"Food should be prepared and served hygienically.",
+            <div className="text-center">
 
-"Students should maintain discipline while using canteen facilities.",
+              <FaUsers className="text-4xl text-purple-600 mx-auto mb-3" />
 
-"Respect canteen staff and other users."
+              <h3 className="text-2xl font-extrabold text-gray-900">
+                Student
+              </h3>
 
-];
+              <p className="text-gray-500 mt-1">
+                Friendly
+              </p>
 
+            </div>
 
+          </div>
 
+        </div>
 
-return (
+      </section>
 
-<div className="bg-gray-50">
+      <section className="max-w-7xl mx-auto px-6 py-24">
 
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
 
+          <div className="relative">
 
-{/* Hero Section */}
+            <div className="absolute -top-5 -left-5 w-24 h-24 bg-yellow-300 rounded-2xl -z-10"></div>
 
-<section className="bg-gradient-to-r from-orange-900 to-yellow-600 text-white py-16">
+            <img
+              src="/images/canteen-food.jpg"
+              alt="RPI Canteen"
+              className="w-full h-[430px] object-cover rounded-3xl shadow-2xl"
+            />
 
+            <div className="absolute -bottom-7 -right-5 bg-orange-700 text-white rounded-2xl p-6 shadow-xl max-w-[230px]">
 
-<div className="max-w-7xl mx-auto px-6 text-center">
+              <FaCoffee className="text-yellow-300 text-4xl mb-3" />
 
+              <h3 className="font-bold text-xl">
+                Campus Comfort
+              </h3>
 
-<FaUtensils className="text-6xl mx-auto text-yellow-200 mb-5"/>
+              <p className="text-orange-100 text-sm mt-1">
+                A convenient place to eat, relax and connect.
+              </p>
 
+            </div>
 
-<h1 className="text-5xl font-bold">
+          </div>
 
-Rolpa Polytechnic Institute Canteen
+          <div>
 
-</h1>
+            <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">
+              About Our Canteen
+            </span>
 
+            <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mt-3 leading-tight">
 
-<p className="mt-5 text-lg max-w-3xl mx-auto text-gray-100">
+              More Than Just
 
-A comfortable food and refreshment facility providing hygienic,
-affordable and quality food services for students, teachers and
-staff of Rolpa Polytechnic Institute.
+              <span className="text-orange-600">
+                {" "}Food
+              </span>
 
-</p>
+            </h2>
 
+            <p className="text-gray-600 leading-relaxed mt-6 text-lg">
 
-</div>
+              The <strong>Rolpa Polytechnic Institute Canteen</strong>
+              is an important campus facility designed to provide
+              convenient food and refreshment services to students,
+              teachers and staff members.
 
+            </p>
 
-</section>
+            <p className="text-gray-600 leading-relaxed mt-5">
 
+              It provides a comfortable environment where students
+              can enjoy meals, snacks and beverages during college
+              breaks while spending quality time with their friends.
 
+            </p>
 
+            <div className="grid sm:grid-cols-2 gap-4 mt-8">
 
+              <div className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl">
 
+                <div className="w-11 h-11 bg-orange-600 text-white rounded-full flex items-center justify-center">
 
+                  <FaCheckCircle />
 
+                </div>
 
+                <span className="font-semibold">
+                  Affordable Service
+                </span>
 
-{/* About Canteen */}
+              </div>
 
-<section className="max-w-7xl mx-auto px-6 py-12">
+              <div className="flex items-center gap-3 bg-green-50 p-4 rounded-xl">
 
+                <div className="w-11 h-11 bg-green-600 text-white rounded-full flex items-center justify-center">
 
-<div className="grid md:grid-cols-2 gap-10 items-center">
+                  <FaLeaf />
 
+                </div>
 
-<div>
+                <span className="font-semibold">
+                  Healthy Choices
+                </span>
 
+              </div>
 
-<h2 className="text-3xl font-bold text-orange-900 mb-5">
+            </div>
 
-About RPI Canteen
+          </div>
 
-</h2>
+        </div>
 
+      </section>
 
-<p className="text-gray-600 leading-relaxed">
+      <section
+        id="facilities"
+        className="py-24 bg-white"
+      >
 
-The <b>Rolpa Polytechnic Institute (RPI) Canteen</b> is an important
-campus facility that provides food and refreshment services for
-students, teachers and staff members.
+        <div className="max-w-7xl mx-auto px-6">
 
-</p>
+          <div className="text-center max-w-2xl mx-auto mb-14">
 
+            <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">
+              What We Provide
+            </span>
 
-<p className="text-gray-600 mt-4 leading-relaxed">
+            <h2 className="text-4xl font-extrabold text-gray-900 mt-3">
+              Canteen Facilities
+            </h2>
 
-The canteen creates a friendly environment where students can enjoy
-healthy meals, snacks and beverages during college breaks.
+            <p className="text-gray-600 mt-4">
+              Designed to provide students and campus members
+              with convenient and comfortable food services.
+            </p>
 
-</p>
+          </div>
 
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
 
-</div>
+            {facilities.map((item, index) => (
 
+              <div
+                key={index}
+                className="group bg-gray-50 rounded-3xl p-7 border border-gray-100 hover:bg-orange-600 hover:text-white hover:-translate-y-3 hover:shadow-2xl transition-all duration-300"
+              >
 
+                <div className="w-16 h-16 rounded-2xl bg-orange-100 text-orange-600 group-hover:bg-white/20 group-hover:text-yellow-300 flex items-center justify-center text-3xl transition">
 
+                  {item.icon}
 
+                </div>
 
+                <h3 className="text-xl font-bold mt-6">
+                  {item.title}
+                </h3>
 
+                <p className="text-gray-600 group-hover:text-orange-100 mt-3 leading-relaxed text-sm">
+                  {item.desc}
+                </p>
 
-<div className="bg-white rounded-xl shadow-xl p-8">
+              </div>
 
+            ))}
 
-<div className="grid grid-cols-2 gap-6 text-center">
+          </div>
 
+        </div>
 
-<div>
+      </section>
 
-<FaStore className="text-4xl text-orange-600 mx-auto"/>
+      <section
+        id="food"
+        className="py-24 bg-gradient-to-br from-orange-950 via-orange-900 to-yellow-700 text-white"
+      >
 
-<h3 className="text-2xl font-bold mt-2">
-Campus
-</h3>
+        <div className="max-w-7xl mx-auto px-6">
 
-<p>
-Facility
-</p>
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-</div>
+            <div>
 
+              <span className="text-yellow-300 font-bold uppercase tracking-widest text-sm">
+                Food & Refreshments
+              </span>
 
+              <h2 className="text-4xl lg:text-5xl font-extrabold mt-3">
+                Food Services Available
+              </h2>
 
-<div>
+              <p className="text-orange-100 mt-5 leading-relaxed text-lg">
 
-<FaCoffee className="text-4xl text-yellow-600 mx-auto"/>
+                The canteen offers a variety of convenient food
+                and refreshment options suitable for students
+                and campus members.
 
-<h3 className="text-2xl font-bold mt-2">
-Food
-</h3>
+              </p>
 
-<p>
-Service
-</p>
+              <div className="grid sm:grid-cols-2 gap-4 mt-9">
 
-</div>
+                {foodItems.map((item, index) => (
 
+                  <div
+                    key={index}
+                    className="flex items-start gap-3 bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/20 transition"
+                  >
 
+                    <FaCheckCircle className="text-yellow-300 mt-1 flex-shrink-0" />
 
+                    <span className="text-orange-50 text-sm">
+                      {item}
+                    </span>
 
-<div>
+                  </div>
 
-<FaUsers className="text-4xl text-blue-600 mx-auto"/>
+                ))}
 
-<h3 className="text-2xl font-bold mt-2">
-Students
-</h3>
+              </div>
 
-<p>
-Support
-</p>
+            </div>
 
-</div>
+            <div className="relative">
 
+              <img
+                src="/images/canteen-food2.jpg"
+                alt="Food Service at RPI Canteen"
+                className="w-full h-[480px] object-cover rounded-3xl shadow-2xl"
+              />
 
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-orange-950/70 to-transparent"></div>
 
+              <div className="absolute bottom-7 left-7 right-7">
 
-<div>
+                <div className="bg-white/15 backdrop-blur-lg border border-white/20 rounded-2xl p-5">
 
-<FaClock className="text-4xl text-green-600 mx-auto"/>
+                  <div className="flex items-center gap-3">
 
-<h3 className="text-2xl font-bold mt-2">
-Daily
-</h3>
+                    <FaAppleAlt className="text-yellow-300 text-3xl" />
 
-<p>
-Service
-</p>
+                    <div>
 
-</div>
+                      <h3 className="font-bold text-xl">
+                        Fresh & Nutritious
+                      </h3>
 
+                      <p className="text-orange-100 text-sm">
+                        Supporting healthy campus life
+                      </p>
 
-</div>
+                    </div>
 
+                  </div>
 
-</div>
+                </div>
 
+              </div>
 
-</div>
+            </div>
 
+          </div>
 
-</section>
+        </div>
 
+      </section>
 
+      <section className="py-20 bg-orange-50">
 
+        <div className="max-w-6xl mx-auto px-6">
 
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
+            <div className="grid md:grid-cols-2">
 
+              <div className="bg-orange-700 p-10 md:p-14 text-white">
 
+                <FaShieldAlt className="text-6xl text-yellow-300 mb-6" />
 
+                <h2 className="text-4xl font-extrabold">
+                  Hygiene Comes First
+                </h2>
 
-{/* Facilities */}
+                <p className="text-orange-100 mt-5 leading-relaxed">
 
-<section className="max-w-7xl mx-auto px-6 py-10">
+                  Cleanliness and food safety are important for
+                  maintaining a healthy and comfortable campus
+                  environment.
 
+                </p>
 
-<h2 className="text-3xl font-bold text-center text-orange-900 mb-10">
+              </div>
 
-Canteen Facilities
+              <div className="p-10 md:p-14">
 
-</h2>
+                <div className="space-y-6">
 
+                  <div className="flex gap-4">
 
+                    <FaCheckCircle className="text-green-500 text-xl mt-1" />
 
-<div className="grid md:grid-cols-4 gap-6">
+                    <div>
 
+                      <h3 className="font-bold">
+                        Clean Food Preparation
+                      </h3>
 
-{
+                      <p className="text-gray-500 text-sm mt-1">
+                        Food should be prepared in a clean environment.
+                      </p>
 
-facilities.map((item,index)=>(
+                    </div>
 
+                  </div>
 
-<div
-key={index}
-className="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition"
->
+                  <div className="flex gap-4">
 
+                    <FaCheckCircle className="text-green-500 text-xl mt-1" />
 
-<div className="text-4xl text-orange-600 mb-4">
+                    <div>
 
-{item.icon}
+                      <h3 className="font-bold">
+                        Safe Drinking Water
+                      </h3>
 
-</div>
+                      <p className="text-gray-500 text-sm mt-1">
+                        Clean drinking water is available for campus members.
+                      </p>
 
+                    </div>
 
-<h3 className="font-bold text-xl mb-3">
+                  </div>
 
-{item.title}
+                  <div className="flex gap-4">
 
-</h3>
+                    <FaCheckCircle className="text-green-500 text-xl mt-1" />
 
+                    <div>
 
-<p className="text-gray-600 text-sm">
+                      <h3 className="font-bold">
+                        Clean Surroundings
+                      </h3>
 
-{item.desc}
+                      <p className="text-gray-500 text-sm mt-1">
+                        Everyone should help keep the canteen area clean.
+                      </p>
 
-</p>
+                    </div>
 
+                  </div>
 
-</div>
+                </div>
 
+              </div>
 
-))
+            </div>
 
-}
+          </div>
 
+        </div>
 
-</div>
+      </section>
 
+      <section className="py-24 bg-gray-50">
 
-</section>
+        <div className="max-w-7xl mx-auto px-6">
 
+          <div className="text-center max-w-2xl mx-auto mb-14">
 
+            <span className="text-orange-600 font-bold uppercase tracking-widest text-sm">
+              Student Experience
+            </span>
 
+            <h2 className="text-4xl font-extrabold text-gray-900 mt-3">
+              Benefits for Students
+            </h2>
 
+            <p className="text-gray-600 mt-4">
+              The campus canteen contributes to a comfortable
+              and productive student experience.
+            </p>
 
+          </div>
 
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
 
+            {benefits.map((item, index) => (
 
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              >
 
-{/* Food Services */}
+                <div className="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl">
 
-<section className="bg-white py-12">
+                  {item.icon}
 
+                </div>
 
-<div className="max-w-7xl mx-auto px-6">
+                <h3 className="text-xl font-bold mt-5">
+                  {item.title}
+                </h3>
 
+                <p className="text-gray-600 mt-3 leading-relaxed">
+                  {item.desc}
+                </p>
 
-<h2 className="text-3xl font-bold text-orange-900 text-center mb-8">
+              </div>
 
-Food Services Available
+            ))}
 
-</h2>
+          </div>
 
+        </div>
 
+      </section>
 
-<div className="grid md:grid-cols-2 gap-5">
+      <section className="py-24 bg-blue-950">
 
+        <div className="max-w-5xl mx-auto px-6">
 
-{
+          <div className="text-center mb-12">
 
-foodItems.map((item,index)=>(
+            <span className="text-blue-300 font-bold uppercase tracking-widest text-sm">
+              Responsible Use
+            </span>
 
+            <h2 className="text-4xl font-extrabold text-white mt-3">
+              Canteen Rules
+            </h2>
 
-<div
-key={index}
-className="flex gap-3 items-center bg-gray-100 p-4 rounded-lg"
->
+            <p className="text-blue-200 mt-4">
+              A clean and respectful environment depends on everyone's cooperation.
+            </p>
 
+          </div>
 
-<FaCheckCircle className="text-orange-600"/>
+          <div className="bg-white rounded-3xl p-7 md:p-10 shadow-2xl">
 
+            <div className="space-y-4">
 
-<p>{item}</p>
+              {rules.map((rule, index) => (
 
+                <div
+                  key={index}
+                  className="flex items-center gap-5 bg-gray-50 hover:bg-orange-50 rounded-xl p-5 transition"
+                >
 
-</div>
+                  <div className="w-10 h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
 
+                    {index + 1}
 
-))
+                  </div>
 
-}
+                  <p className="text-gray-700 font-medium">
+                    {rule}
+                  </p>
 
+                </div>
 
-</div>
+              ))}
 
+            </div>
 
-</div>
+          </div>
 
+        </div>
 
-</section>
+      </section>
 
+      <section className="relative overflow-hidden">
 
+        <div className="absolute inset-0 bg-orange-700"></div>
 
+        <div className="relative max-w-5xl mx-auto px-6 py-20 text-center">
 
+          <FaCoffee className="text-5xl text-yellow-300 mx-auto mb-6" />
 
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white">
+            Enjoy Your Campus Break
+          </h2>
 
+          <p className="text-orange-100 text-lg max-w-2xl mx-auto mt-5 leading-relaxed">
 
+            The RPI Canteen is more than a place to eat.
+            It is a convenient campus space where students
+            can refresh, connect and continue their academic journey.
 
+          </p>
 
-{/* Hygiene */}
+          <div className="mt-8 inline-flex items-center gap-3 bg-white text-orange-700 font-bold px-8 py-4 rounded-full shadow-xl">
 
-<section className="bg-orange-900 text-white py-12">
+            <FaUtensils />
 
+            Quality • Hygiene • Comfort
 
-<div className="max-w-6xl mx-auto text-center px-6">
+          </div>
 
+        </div>
 
-<FaShieldAlt className="text-5xl mx-auto text-yellow-300 mb-4"/>
+      </section>
 
-
-<h2 className="text-3xl font-bold">
-
-Hygienic Food Environment
-
-</h2>
-
-
-<p className="mt-4">
-
-RPI Canteen maintains cleanliness, food safety and proper hygiene
-standards to provide a healthy environment for everyone.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-{/* Student Benefits */}
-
-<section className="max-w-7xl mx-auto px-6 py-12">
-
-
-<h2 className="text-3xl font-bold text-orange-900 text-center mb-8">
-
-Benefits for Students
-
-</h2>
-
-
-
-<div className="grid md:grid-cols-3 gap-6">
-
-
-{
-
-benefits.map((item,index)=>(
-
-
-<div
-key={index}
-className="bg-white shadow-lg rounded-xl p-6"
->
-
-
-<FaGraduationCap className="text-4xl text-orange-600 mb-4"/>
-
-
-<p className="font-semibold">
-
-{item}
-
-</p>
-
-
-</div>
-
-
-))
-
-}
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-{/* Rules */}
-
-<section className="bg-blue-900 py-12">
-
-
-<div className="max-w-6xl mx-auto px-6">
-
-
-<h2 className="text-3xl text-white font-bold text-center mb-8">
-
-Canteen Rules
-
-</h2>
-
-
-
-<div className="bg-white rounded-xl p-8">
-
-
-{
-
-rules.map((rule,index)=>(
-
-
-<p key={index} className="mb-4 text-gray-700">
-
-{index+1}. {rule}
-
-</p>
-
-
-))
-
-}
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-</div>
-
-);
-
+    </div>
+  );
 };
-
 
 export default Canteen;
